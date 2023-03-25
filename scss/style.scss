@@ -115,36 +115,38 @@ body {
     }
 }
 
+.headingBlock{
+    text-align: center;
+    font-family: $main-font;
+    font-size: 40px;
+}
+
 .skills{
     width: 1034px;
-    height: 227px;
     background: rgba(62, 60, 60, 0.4);
     backdrop-filter: blur(15px);
     border-radius: 20px;
     margin: 0 auto;
     padding: 14px 27px;
+    &__boxing{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     &__box{
         background: rgba(20, 20, 20, 0.6);
         backdrop-filter: blur(15px);
         border-radius: 20px;
         width: 200px;
-        height: 200px;
-        margin: 0 42px;
-        padding: 3px;
+        padding: 20px;
+        margin: 5px;
         text-align: center;
-        position: relative;
         &--descr{
-            position: absolute;
-            top: 50%;
             padding: 5px;
+            text-align: center;
         }
         &--img{
-            position: absolute;
-            top: 25%;
-            left: 39%;
             width: 40px;
             height: 40px;
-            
         }
     }
 }

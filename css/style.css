@@ -122,41 +122,46 @@ body {
     text-decoration: none; }
 
 /* line 118, ../scss/style.scss */
+.headingBlock {
+  text-align: center;
+  font-family: "Marck Script", cursive;
+  font-size: 40px; }
+
+/* line 124, ../scss/style.scss */
 .skills {
   width: 1034px;
-  height: 227px;
   background: rgba(62, 60, 60, 0.4);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   border-radius: 20px;
   margin: 0 auto;
   padding: 14px 27px; }
-  /* line 126, ../scss/style.scss */
+  /* line 131, ../scss/style.scss */
+  .skills__boxing {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  /* line 135, ../scss/style.scss */
   .skills__box {
     background: rgba(20, 20, 20, 0.6);
     -webkit-backdrop-filter: blur(15px);
             backdrop-filter: blur(15px);
     border-radius: 20px;
     width: 200px;
-    height: 200px;
-    margin: 0 42px;
-    padding: 3px;
-    text-align: center;
-    position: relative; }
-    /* line 136, ../scss/style.scss */
+    padding: 20px;
+    margin: 5px;
+    text-align: center; }
+    /* line 143, ../scss/style.scss */
     .skills__box--descr {
-      position: absolute;
-      top: 50%;
-      padding: 5px; }
-    /* line 141, ../scss/style.scss */
+      padding: 5px;
+      text-align: center; }
+    /* line 147, ../scss/style.scss */
     .skills__box--img {
-      position: absolute;
-      top: 25%;
-      left: 39%;
       width: 40px;
       height: 40px; }
 
-/* line 152, ../scss/style.scss */
+/* line 154, ../scss/style.scss */
 .copyright {
   padding: 25px 0 10px 0;
   -webkit-box-pack: center;
