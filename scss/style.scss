@@ -81,6 +81,7 @@ header{
             border-style: none;
             border-radius: 50%;
             width: 100%;
+            max-height: 450px;
         }
     }
 }
@@ -88,6 +89,7 @@ header{
 .headInfo{
     padding: 15px;
     max-width: 50%;
+    width: 50%;
     margin: auto;
     &__text{
         font-family: $text-font;

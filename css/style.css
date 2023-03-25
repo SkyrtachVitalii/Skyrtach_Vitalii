@@ -84,20 +84,22 @@ header {
   .mainPhoto__box--item {
     border-style: none;
     border-radius: 50%;
-    width: 100%; }
+    width: 100%;
+    max-height: 450px; }
 
-/* line 88, ../scss/style.scss */
+/* line 89, ../scss/style.scss */
 .headInfo {
   padding: 15px;
   max-width: 50%;
+  width: 50%;
   margin: auto; }
-  /* line 92, ../scss/style.scss */
+  /* line 94, ../scss/style.scss */
   .headInfo__text {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 28px;
     text-align: center; }
 
-/* line 99, ../scss/style.scss */
+/* line 101, ../scss/style.scss */
 .contacts {
   padding: 10px;
   -webkit-box-pack: center;
@@ -107,10 +109,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  /* line 104, ../scss/style.scss */
+  /* line 106, ../scss/style.scss */
   .contacts__item {
     margin: 0 10px; }
-  /* line 107, ../scss/style.scss */
+  /* line 109, ../scss/style.scss */
   .contacts--footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -118,30 +120,30 @@ header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     font-size: 16px; }
-    /* line 111, ../scss/style.scss */
+    /* line 113, ../scss/style.scss */
     .contacts--footer img {
       width: 30px; }
 
-/* line 117, ../scss/style.scss */
+/* line 119, ../scss/style.scss */
 .social {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px 0; }
-  /* line 120, ../scss/style.scss */
+  /* line 122, ../scss/style.scss */
   .social a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     text-decoration: none; }
 
-/* line 126, ../scss/style.scss */
+/* line 128, ../scss/style.scss */
 .headingBlock {
   text-align: center;
   font-family: "Marck Script", cursive;
   font-size: 40px; }
 
-/* line 132, ../scss/style.scss */
+/* line 134, ../scss/style.scss */
 .skills {
   max-width: 1034px;
   background: rgba(62, 60, 60, 0.4);
@@ -153,14 +155,14 @@ header {
   margin-bottom: 15px;
   margin-left: auto;
   padding: 14px 27px; }
-  /* line 142, ../scss/style.scss */
+  /* line 144, ../scss/style.scss */
   .skills__boxing {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  /* line 146, ../scss/style.scss */
+  /* line 148, ../scss/style.scss */
   .skills__box {
     background: rgba(20, 20, 20, 0.6);
     -webkit-backdrop-filter: blur(15px);
@@ -170,16 +172,16 @@ header {
     padding: 20px;
     margin: 5px;
     text-align: center; }
-    /* line 154, ../scss/style.scss */
+    /* line 156, ../scss/style.scss */
     .skills__box--descr {
       padding: 5px;
       text-align: center; }
-    /* line 158, ../scss/style.scss */
+    /* line 160, ../scss/style.scss */
     .skills__box--img {
       width: 40px;
       height: 40px; }
 
-/* line 165, ../scss/style.scss */
+/* line 167, ../scss/style.scss */
 .copyright {
   padding: 25px 0 10px 0;
   -webkit-box-pack: center;
