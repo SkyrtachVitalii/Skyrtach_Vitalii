@@ -134,7 +134,7 @@ body {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   border-radius: 20px;
-  margin: 15px auto;
+  margin: 16px auto;
   padding: 14px 27px; }
   /* line 131, ../scss/style.scss */
   .skills__boxing {
