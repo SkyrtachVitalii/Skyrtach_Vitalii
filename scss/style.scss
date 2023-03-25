@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+$background-color: #5d6260;
+$main-font: 'Marck Script', cursive;
+$text-font: 'Roboto Condensed', sans-serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFF;
+}
+
+body {
+    background-color: $background-color;
+    background-image: linear-gradient(135deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
+    font-family: $text-font;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.jc-space-around{
+    justify-content: space-around;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 7px 15px 20px;
+}
+
+.title{
+    &__item{
+      font-family: $main-font;
+      font-style: italic;
+      line-height: 1.1;
+      font-size: 4vw;
+      font-weight: 600;
+    }
+}
+
+.mainMenu{
+    align-items: center;
+    &__item{
+        font-family: $main-font;
+        font-size: 3vw;
+        padding: 15px;
+        &:hover{
+            text-shadow: 2px 2px 3px #FFF;
+            background-color: #686868;
+        }
+        &:active{
+            background-color: #7a7a7a;
+        }
+    }
+    &__link{
+        text-decoration: none;
+    }
+}
+
+.mainPhoto{
+    &__box{
+        &--item{
+            max-width: 100%;
+            width: 490px;
+        }
+    }
+}
+
+.headInfo{
+    padding: 15px;
+    width: 50%;
+    margin: auto;
+    &__text{
+        font-family: $text-font;
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+.contacts{
+    padding: 10px;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center ;
+    &__item{
+        margin: 0 10px;
+    }
+    &--footer{
+        display: flex;
+        justify-content: space-around;
+        font-size: 16px;
+        & img{
+            width: 30px;
+        }
+    }
+}
+
+.social{
+    justify-content: center;
+    padding: 10px 0;
+    & a{
+        align-items: center;
+        text-decoration: none;
+    }
+}
+
+.skills{
+    width: 1034px;
+    height: 227px;
+    background: rgba(62, 60, 60, 0.4);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 14px 27px;
+    &__box{
+        background: rgba(20, 20, 20, 0.6);
+        backdrop-filter: blur(15px);
+        border-radius: 20px;
+        width: 200px;
+        height: 200px;
+        margin: 0 42px;
+        padding: 3px;
+        text-align: center;
+        position: relative;
+        &--descr{
+            position: absolute;
+            top: 50%;
+            padding: 5px;
+        }
+        &--img{
+            position: absolute;
+            top: 25%;
+            left: 39%;
+            width: 40px;
+            height: 40px;
+            
+        }
+    }
+}
+
+.copyright{
+    padding: 25px 0 10px 0;
+    justify-content: center;
+    font-size: 16px;
+}
+/*552px бургер меню*/
