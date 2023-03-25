@@ -134,16 +134,15 @@ body {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   border-radius: 20px;
-  margin: 16px auto;
   padding: 14px 27px; }
-  /* line 131, ../scss/style.scss */
+  /* line 130, ../scss/style.scss */
   .skills__boxing {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  /* line 135, ../scss/style.scss */
+  /* line 134, ../scss/style.scss */
   .skills__box {
     background: rgba(20, 20, 20, 0.6);
     -webkit-backdrop-filter: blur(15px);
@@ -153,16 +152,16 @@ body {
     padding: 20px;
     margin: 5px;
     text-align: center; }
-    /* line 143, ../scss/style.scss */
+    /* line 142, ../scss/style.scss */
     .skills__box--descr {
       padding: 5px;
       text-align: center; }
-    /* line 147, ../scss/style.scss */
+    /* line 146, ../scss/style.scss */
     .skills__box--img {
       width: 40px;
       height: 40px; }
 
-/* line 154, ../scss/style.scss */
+/* line 153, ../scss/style.scss */
 .copyright {
   padding: 25px 0 10px 0;
   -webkit-box-pack: center;
