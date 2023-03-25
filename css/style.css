@@ -50,7 +50,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  margin-top: 10px; }
+  margin-top: 32px; }
   /* line 54, ../scss/style.scss */
   .mainMenu__item {
     font-family: "Marck Script", cursive;
@@ -134,21 +134,22 @@ body {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   border-radius: 20px;
-  margin: 0 auto;
+  margin: 15px auto;
   padding: 14px 27px; }
   /* line 131, ../scss/style.scss */
   .skills__boxing {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   /* line 135, ../scss/style.scss */
   .skills__box {
     background: rgba(20, 20, 20, 0.6);
     -webkit-backdrop-filter: blur(15px);
             backdrop-filter: blur(15px);
     border-radius: 20px;
-    width: 200px;
+    width: 180px;
     padding: 20px;
     margin: 5px;
     text-align: center; }
