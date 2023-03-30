@@ -18,10 +18,6 @@ body {
   background-size: cover;
   font-family: "Roboto Condensed", sans-serif; }
 
-/* line 25, ../scss/style.scss */
-header {
-  height: 100vh; }
-
 /* line 29, ../scss/style.scss */
 .d-flex {
   display: -webkit-box;
@@ -51,7 +47,7 @@ header {
     font-family: "Marck Script", cursive;
     font-style: italic;
     line-height: 1.1;
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 600; }
 
 /* line 56, ../scss/style.scss */
@@ -79,7 +75,7 @@ header {
 
 /* line 77, ../scss/style.scss */
 .mainPhoto {
-  max-width: 50%; }
+  max-width: 640px; }
   /* line 80, ../scss/style.scss */
   .mainPhoto__box--item {
     border-style: none;
@@ -90,7 +86,7 @@ header {
 /* line 89, ../scss/style.scss */
 .headInfo {
   padding: 15px;
-  max-width: 50%;
+  max-width: 640px;
   width: 50%;
   margin: auto; }
   /* line 94, ../scss/style.scss */

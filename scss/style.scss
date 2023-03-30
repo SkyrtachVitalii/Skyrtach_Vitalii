@@ -22,9 +22,9 @@ body {
     font-family: $text-font;
 }
 
-header{
-    height: 100vh;
-}
+// header{
+//     height: 100vh;
+// }
 
 .d-flex{
     display: flex;
@@ -48,7 +48,7 @@ header{
       font-family: $main-font;
       font-style: italic;
       line-height: 1.1;
-      font-size: 4vw;
+      font-size: 3.5vw;
       font-weight: 600;
     }
 }
@@ -75,7 +75,7 @@ header{
 }
 
 .mainPhoto{
-    max-width: 50%;
+    max-width: 640px;
     &__box{
         &--item{
             border-style: none;
@@ -88,7 +88,7 @@ header{
 
 .headInfo{
     padding: 15px;
-    max-width: 50%;
+    max-width: 640px;
     width: 50%;
     margin: auto;
     &__text{
