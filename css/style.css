@@ -178,6 +178,49 @@ body {
       height: 40px; }
 
 /* line 167, ../scss/style.scss */
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #4c4c4c;
+  padding: 35px 10px 45px;
+  width: 1230px; }
+
+/* line 175, ../scss/style.scss */
+.featuresBox {
+  position: relative;
+  text-align: center;
+  width: 280px;
+  background-color: #666666;
+  padding: 10px; }
+  /* line 181, ../scss/style.scss */
+  .featuresBox__img {
+    width: 50px;
+    height: 50px; }
+  /* line 185, ../scss/style.scss */
+  .featuresBox__heading {
+    font-size: 35px;
+    padding: 10px 5px; }
+  /* line 189, ../scss/style.scss */
+  .featuresBox__descr {
+    font-size: 15px;
+    padding: 10px 5px;
+    margin-bottom: 30px; }
+  /* line 194, ../scss/style.scss */
+  .featuresBox__btn {
+    display: block;
+    width: 100px;
+    height: 40px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #131313;
+    position: absolute;
+    bottom: -20px;
+    left: 90px; }
+
+/* line 207, ../scss/style.scss */
 .copyright {
   padding: 25px 0 10px 0;
   -webkit-box-pack: center;

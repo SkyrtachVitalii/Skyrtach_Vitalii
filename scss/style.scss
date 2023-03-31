@@ -164,6 +164,46 @@ body {
     }
 }
 
+.features{
+    display: flex;
+    justify-content: space-around;
+    background-color: #4c4c4c;
+    padding: 35px 10px 45px;
+    width: 1230px;
+}
+
+.featuresBox{
+    position: relative;
+    text-align: center;
+    width: 280px;
+    background-color: #666666;
+    padding: 10px;
+    &__img{
+        width: 50px;
+        height: 50px;
+    }
+    &__heading{
+        font-size: 35px;
+        padding: 10px 5px;
+    }
+    &__descr{
+        font-size: 15px;
+        padding: 10px 5px;
+        margin-bottom: 30px;
+    }
+    &__btn{
+        display: block;
+        width: 100px;
+        height: 40px;
+        text-decoration: none;
+        padding: 10px;
+        background-color: #131313;
+        position: absolute;
+        bottom: -20px;
+        left: 90px;
+    }
+}
+
 .copyright{
     padding: 25px 0 10px 0;
     justify-content: center;
