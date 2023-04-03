@@ -304,6 +304,14 @@ body {
     right: 15px; }
 
 /* line 279, ../scss/style.scss */
+.skillsSlider .slick-slide img {
+  display: inline-block; }
+
+/* line 283, ../scss/style.scss */
+.slick-slide {
+  height: 130px; }
+
+/* line 287, ../scss/style.scss */
 .copyright {
   padding: 25px 0 10px 0;
   -webkit-box-pack: center;

@@ -276,6 +276,14 @@ body {
     }
 }
 
+.skillsSlider .slick-slide img{
+    display: inline-block;
+}
+
+.slick-slide{
+    height: 130px;
+}
+
 .copyright{
     padding: 25px 0 10px 0;
     justify-content: center;
