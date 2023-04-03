@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('.skillsSlider').slick({
+        centerMode: true,
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
