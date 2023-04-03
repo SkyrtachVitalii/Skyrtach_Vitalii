@@ -63,10 +63,11 @@ body {
         padding: 15px;
         &:hover{
             text-shadow: 2px 2px 3px #FFF;
-            background-color: #686868;
+            // background-color: #686868;
         }
         &:active{
-            background-color: #7a7a7a;
+            // background-color: #7a7a7a;
+            opacity: 0.3;
         }
     }
     &__link{
@@ -122,6 +123,12 @@ body {
     & a{
         align-items: center;
         text-decoration: none;
+        &:hover{
+            opacity: 0.5;
+        }
+        &:active{
+            opacity: 0.2;
+        }
     }
 }
 
