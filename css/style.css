@@ -221,6 +221,89 @@ body {
     left: 90px; }
 
 /* line 207, ../scss/style.scss */
+.todo {
+  width: 100%;
+  padding: 10px; }
+  /* line 210, ../scss/style.scss */
+  .todo__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+/* line 216, ../scss/style.scss */
+.addEvent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  /* line 219, ../scss/style.scss */
+  .addEvent__text {
+    width: 500px;
+    height: 60px;
+    color: #000000;
+    padding: 0 10px; }
+  /* line 225, ../scss/style.scss */
+  .addEvent__btn {
+    width: 200px;
+    margin-left: 50px;
+    color: #000000;
+    font-size: 24px;
+    background-color: #08c;
+    border: none; }
+    /* line 232, ../scss/style.scss */
+    .addEvent__btn:hover {
+      background-color: #080; }
+
+/* line 239, ../scss/style.scss */
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+  width: 100%; }
+  /* line 244, ../scss/style.scss */
+  .list__todo {
+    margin: 0 20px; }
+  /* line 247, ../scss/style.scss */
+  .list__done {
+    margin: 0 20px;
+    position: relative; }
+
+/* line 253, ../scss/style.scss */
+.formToDolist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  margin: 15px 5px; }
+  /* line 258, ../scss/style.scss */
+  .formToDolist__text {
+    width: 400px;
+    margin-right: 50px;
+    position: relative; }
+  /* line 263, ../scss/style.scss */
+  .formToDolist__checkbox {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -5px; }
+  /* line 270, ../scss/style.scss */
+  .formToDolist__imgDel {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: calc(50% - 15px);
+    right: 15px; }
+
+/* line 279, ../scss/style.scss */
 .copyright {
   padding: 25px 0 10px 0;
   -webkit-box-pack: center;

@@ -84,4 +84,99 @@ for (let i = 0; i < featuresArr.length; i++){
     features.appendChild(featuresBox);
 }
 
+// ----------------------------------
+document.querySelector(".addEvent__btn").onclick = addEvent;
 
+let idToDoListItem = 1;
+
+let formEvents = document.querySelector(".todoForm");
+
+
+function addEvent(){
+    let eventText = document.querySelector(".addEvent__text").value;
+
+    let toDoItem = document.createElement("div");
+    toDoItem.classList.add("formToDolist");
+
+
+    let toDoItemText = document.createElement("p");
+    toDoItemText.classList.add("formToDolist__text");
+    toDoItemText.innerText = eventText;
+
+    let toDoItemCheckbox = document.createElement("input");
+    toDoItemCheckbox.classList.add("formToDolist__checkbox");
+    toDoItemCheckbox.setAttribute("type", "checkbox");
+    toDoItemCheckbox.setAttribute("id", idToDoListItem++)
+    toDoItemCheckbox.setAttribute("name", "done")
+
+    if (eventText){
+        toDoItem.appendChild(toDoItemText);
+            toDoItem.appendChild(toDoItemCheckbox);
+            formEvents.appendChild(toDoItem);
+    } else {
+        alert("Введіть текст для завдання)))");
+    }
+
+
+
+
+    let doneEvent = document.querySelectorAll(".formToDolist__checkbox");
+
+    doneEvent.forEach((check) => {
+        check.addEventListener('click', toDoneEvent);
+      });
+      clearInput();
+}
+
+let formDoneEvents = document.querySelector(".list__done");
+
+function toDoneEvent(){
+    let doneItem = document.createElement("div");
+    doneItem.classList.add("formToDolist");
+
+    // let doneItemText = document.createElement("p");
+    // doneItemText.classList.add("formToDolist__text");
+
+
+    let textBox = this.previousSibling;
+    let textEvent = textBox.cloneNode(true);
+    console.log(textBox);
+
+
+    // let eventText = this.previousSibling.textContent;
+    // doneItemText.textContent = eventText;
+
+    let delItemImg = document.createElement("img");
+    delItemImg.classList.add("formToDolist__imgDel");
+    delItemImg.setAttribute("src", "../media/images/icon-shopping.png");
+
+    delItemImg.addEventListener('click', delEvent);
+    doneItem.appendChild(textEvent);
+    doneItem.appendChild(delItemImg);
+    formDoneEvents.appendChild(doneItem);
+
+    this.parentNode.parentNode.removeChild(this.parentNode);
+}
+
+function delEvent(){
+    this.parentNode.parentNode.removeChild(this.parentNode);
+}
+
+function clearInput(){
+    var getValue= document.querySelector(".addEvent__text");
+      if (getValue.value !="") {
+          getValue.value = "";
+      }
+}
+
+function computedStyle(){
+    let a = getComputedStyle(document.querySelector(".title__item"));
+
+    console.log(a.fontSize)
+}
+
+
+// computedStyle();
+
+
+// ----------------------------------

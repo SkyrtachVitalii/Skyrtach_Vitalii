@@ -204,6 +204,78 @@ body {
     }
 }
 
+.todo{
+    width: 100%;
+    padding: 10px;
+    &__item{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.addEvent{
+    display: flex;
+    justify-content: space-around;
+    &__text{
+        width: 500px;
+        height: 60px;
+        color: #000000;
+        padding: 0 10px;
+    }
+    &__btn{
+        width: 200px;
+        margin-left: 50px;
+        color: #000000;
+        font-size: 24px;
+        background-color: #08c;
+        border: none;
+        &:hover{
+            background-color: #080;
+        }
+    }
+    
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    &__todo{
+        margin: 0 20px;
+    }
+    &__done{
+        margin: 0 20px;
+        position: relative;
+    }
+}
+
+.formToDolist{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin: 15px 5px;
+    &__text{
+        width: 400px;
+        margin-right: 50px;
+        position: relative;
+    }
+    &__checkbox{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: calc(50% - 10px);
+        right: -5px;
+    }
+    &__imgDel{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: calc(50% - 15px);
+        right: 15px;
+    }
+}
+
 .copyright{
     padding: 25px 0 10px 0;
     justify-content: center;
