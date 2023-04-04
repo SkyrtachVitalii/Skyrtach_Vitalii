@@ -155,7 +155,7 @@ body {
   margin-right: auto;
   margin-bottom: 15px;
   margin-left: auto;
-  padding: 14px 27px; }
+  padding: 14px 27px 27px; }
   /* line 151, ../scss/style.scss */
   .skills__boxing {
     -ms-flex-wrap: wrap;
@@ -262,7 +262,7 @@ body {
     .addEvent__btn:hover {
       background-color: #080; }
 
-/* line 246, ../scss/style.scss */
+/* line 245, ../scss/style.scss */
 .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,15 +271,15 @@ body {
       justify-content: space-around;
   padding: 20px;
   width: 100%; }
-  /* line 251, ../scss/style.scss */
+  /* line 250, ../scss/style.scss */
   .list__todo {
     margin: 0 20px; }
-  /* line 254, ../scss/style.scss */
+  /* line 253, ../scss/style.scss */
   .list__done {
     margin: 0 20px;
     position: relative; }
 
-/* line 260, ../scss/style.scss */
+/* line 259, ../scss/style.scss */
 .formToDolist {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,19 +288,19 @@ body {
       justify-content: space-around;
   position: relative;
   margin: 15px 5px; }
-  /* line 265, ../scss/style.scss */
+  /* line 264, ../scss/style.scss */
   .formToDolist__text {
     width: 400px;
     margin-right: 50px;
     position: relative; }
-  /* line 270, ../scss/style.scss */
+  /* line 269, ../scss/style.scss */
   .formToDolist__checkbox {
     width: 25px;
     height: 25px;
     position: absolute;
     top: calc(50% - 10px);
     right: -5px; }
-  /* line 277, ../scss/style.scss */
+  /* line 276, ../scss/style.scss */
   .formToDolist__imgDel {
     width: 25px;
     height: 25px;
@@ -308,14 +308,14 @@ body {
     top: calc(50% - 15px);
     right: 15px; }
 
-/* line 286, ../scss/style.scss */
+/* line 285, ../scss/style.scss */
 .skillsSlider .slick-slide img {
   display: inline-block; }
 
-/* line 291, ../scss/style.scss */
+/* line 290, ../scss/style.scss */
 .slick-slide {
   height: 130px; }
-/* line 294, ../scss/style.scss */
+/* line 293, ../scss/style.scss */
 .slick-arrow {
   position: absolute;
   width: 30px;
@@ -328,12 +328,12 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   border: none; }
-  /* line 306, ../scss/style.scss */
+  /* line 305, ../scss/style.scss */
   .slick-arrow:hover {
     opacity: 0.3;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out; }
-  /* line 310, ../scss/style.scss */
+  /* line 309, ../scss/style.scss */
   .slick-arrow::after {
     content: "";
     display: block;
@@ -344,24 +344,59 @@ body {
     top: 7px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
-/* line 321, ../scss/style.scss */
+/* line 320, ../scss/style.scss */
 .slick-prev {
   left: 8px; }
-  /* line 323, ../scss/style.scss */
+  /* line 322, ../scss/style.scss */
   .slick-prev::after {
     border-top: 0;
     border-right: 0;
     left: 9px; }
-/* line 329, ../scss/style.scss */
+/* line 328, ../scss/style.scss */
 .slick-next {
   right: 7px; }
-  /* line 331, ../scss/style.scss */
+  /* line 330, ../scss/style.scss */
   .slick-next::after {
     border-bottom: 0;
     border-left: 0;
     left: 5px; }
+/* line 336, ../scss/style.scss */
+.slick-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -14%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  z-index: 10; }
+  /* line 346, ../scss/style.scss */
+  .slick-dots li {
+    margin: 0 4px;
+    padding: 4px; }
+  /* line 351, ../scss/style.scss */
+  .slick-dots button {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    outline: none;
+    border: 0;
+    font-size: 0;
+    cursor: pointer; }
+/* line 363, ../scss/style.scss */
+.slick-active button {
+  width: 14px;
+  height: 14px; }
 
-/* line 341, ../scss/style.scss */
+/* line 372, ../scss/style.scss */
 .copyright {
   padding: 25px 0 10px 0;
   -webkit-box-pack: center;

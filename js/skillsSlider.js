@@ -8,7 +8,7 @@ $(document).ready(function(){
         autoplaySpeed: 3000,
         arrows: true,
         swipeToSlide: true,
-        dots: false,
+        dots: true,
         responsive: [
             {
               breakpoint: 1024,
