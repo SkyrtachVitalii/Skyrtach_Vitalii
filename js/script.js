@@ -176,7 +176,92 @@ function computedStyle(){
 }
 
 
-// computedStyle();
+let products = [
+    {
+        name: "Apple iPhone 12",
+        price: 1000,
+        currency: "USD",
+        status: "active"
+    },
+    {
+        name: "Xiaomi Redmi Note 9",
+        price: 600,
+        currency: "USD",
+        status: "active"
+    },
+    {
+        name: "Samsung Galaxy s20",
+        price: 850,
+        currency: "USD",
+        status: "active"
+    },
+    {
+        name: "Apple iPhone X",
+        price: 550,
+        currency: "USD",
+        status: "active"
+    },
+    {
+        name: "Xiaomi Redmi 5",
+        price: 200,
+        currency: "USD",
+        status: "not_available"
+    },
+    {
+        name: "Samsung Note 8",
+        price: 400,
+        currency: "USD",
+        status: "not_active"
+    },
+]
 
 
-// ----------------------------------
+function filterArr (arr){
+    let newArr = [];
+    arr.filter(function(item){
+        if (item.status === "active"){
+            newArr.push(item);
+        }
+    });
+    return newArr;
+}
+let a = filterArr(products);
+// console.log(a);
+
+function filterArr2 (arr){
+    let newArr = [];
+    arr.filter(function(item){
+        if (item.price > 650){
+            newArr.push(item);
+        }
+    });
+    return newArr;
+}
+let a1 = filterArr2(products);
+// console.log(a1);
+
+
+
+
+let newProducts = products.filter(item => item.status === "active");
+let newProducts2 = products.filter(item => item.price > 650);
+// console.log(newProducts);
+// console.log(newProducts2);
+sum = 0;
+let allPrices = products.map(item => sum += item.price);
+console.log(sum);
+
+// allPrices.forEach((item) => sum += item);
+// console.log(sum);
+
+
+
+
+products.forEach(function(item){
+    item.is_phone = true;
+    if(item.price > 800){
+        item.premium = true;
+    }
+});
+
+// console.log(products);
