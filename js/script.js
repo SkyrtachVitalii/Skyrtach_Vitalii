@@ -248,8 +248,12 @@ let newProducts2 = products.filter(item => item.price > 650);
 // console.log(newProducts);
 // console.log(newProducts2);
 sum = 0;
-let allPrices = products.map(item => sum += item.price);
-console.log(sum);
+products.map((item) => {
+    if(item.price > 650){
+        sum += item.price;
+    } 
+});
+// console.log(sum);
 
 // allPrices.forEach((item) => sum += item);
 // console.log(sum);
@@ -257,11 +261,94 @@ console.log(sum);
 
 
 
-products.forEach(function(item){
-    item.is_phone = true;
-    if(item.price > 800){
-        item.premium = true;
-    }
-});
+// products.forEach(function(item){
+//     item.is_phone = true;
+//     if(item.price > 800){
+//         item.premium = true;
+//     }
+// });
 
 // console.log(products);
+
+function getCapacity(w = 1, h = 1, l = 1){
+    return w * h * l;
+}
+// console.log(getCapacity(12));
+
+
+function getMinMax(funcType = "min", ...args){
+    if (funcType === "min"){
+        return Math.min(...args);
+    }
+    if (funcType === "max"){
+        return Math.max(...args);
+    }
+
+}
+
+numbers = [4,5];
+tuc = [55, -77712, 45];
+
+// console.log(getMinMax("min", 44444444, 3, 4));
+
+
+let newArr = [...numbers, ...tuc];
+// console.log(newArr);
+
+
+let autos = [];
+
+let auto = [
+    {
+	wheels: 4,
+	type: "sedan",
+	na_hody: true,
+    ne_bita: true,
+    ne_krashena: true
+    }
+]
+
+let index = 0;
+let autoTemplate = [
+    {
+    wheels: 4,
+    type: "sedan",
+    na_hody: true,
+    ne_bita: true,
+    ne_krashena: true
+    }
+]
+
+
+function createAuto (name = "carName", ...args){
+    let wheels = args[0];
+    let type = args[1];
+    let na_hody = args[2];
+    let ne_bita = args[3];
+    let ne_krashena = args[4];
+
+    autos.push(
+        {
+            name,
+            wheels,
+            type,
+            na_hody,
+            ne_bita,
+            ne_krashena,
+            ...autoTemplate,
+            ...args
+        }
+    )
+    
+}
+
+let firstAuto = createAuto("Mazda", wheels = 4, type = "sedan", na_hody = false, ne_bita = false, ne_krashena = true);
+
+let secondAuto = createAuto("Mercedes", wheels = 2, type = "sedan", na_hody = false, ne_bita = false, ne_krashena = true);
+
+let thirdAuto = createAuto("Audi", wheels = 4, type = "sedan", na_hody = false, ne_bita = false, ne_krashena = false);
+
+console.log(autos);
+console.log(autos[0].name);
+console.log(autos[1].wheels);
+console.log(autos[2].ne_krashena);
