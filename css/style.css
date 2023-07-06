@@ -407,6 +407,6 @@ body {
 /*552px бургер меню*/
 /* line 379, ../scss/style.scss */
 .messenger_owner {
-  display: none; }
+  display: none !important; }
 
 /*# sourceMappingURL=style.css.map */
