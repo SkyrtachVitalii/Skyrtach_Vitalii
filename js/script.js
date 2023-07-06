@@ -1,7 +1,7 @@
 // let copy = document.querySelectorAll(".contacts");
 
 // for (let i = 0 ; i < copy.length; i++){
-    
+
 //     if(i == (copy.length - 1)){
 //         Додати клас
 //         copy[i].classList.add("newClass2222");
@@ -57,7 +57,7 @@ let features = document.querySelector(".features");
 
 
 
-for (let i = 0; i < featuresArr.length; i++){
+for (let i = 0; i < featuresArr.length; i++) {
     let featuresBox = document.createElement("div");
     featuresBox.classList.add("featuresBox");
 
@@ -92,7 +92,7 @@ let idToDoListItem = 1;
 let formEvents = document.querySelector(".todoForm");
 
 
-function addEvent(){
+function addEvent() {
     let eventText = document.querySelector(".addEvent__text").value;
 
     let toDoItem = document.createElement("div");
@@ -109,10 +109,10 @@ function addEvent(){
     toDoItemCheckbox.setAttribute("id", idToDoListItem++)
     toDoItemCheckbox.setAttribute("name", "done")
 
-    if (eventText){
+    if (eventText) {
         toDoItem.appendChild(toDoItemText);
-            toDoItem.appendChild(toDoItemCheckbox);
-            formEvents.appendChild(toDoItem);
+        toDoItem.appendChild(toDoItemCheckbox);
+        formEvents.appendChild(toDoItem);
     } else {
         alert("Введіть текст для завдання)))");
     }
@@ -124,13 +124,13 @@ function addEvent(){
 
     doneEvent.forEach((check) => {
         check.addEventListener('click', toDoneEvent);
-      });
-      clearInput();
+    });
+    clearInput();
 }
 
 let formDoneEvents = document.querySelector(".list__done");
 
-function toDoneEvent(){
+function toDoneEvent() {
     let doneItem = document.createElement("div");
     doneItem.classList.add("formToDolist");
 
@@ -158,18 +158,18 @@ function toDoneEvent(){
     this.parentNode.parentNode.removeChild(this.parentNode);
 }
 
-function delEvent(){
+function delEvent() {
     this.parentNode.parentNode.removeChild(this.parentNode);
 }
 
-function clearInput(){
-    var getValue= document.querySelector(".addEvent__text");
-      if (getValue.value !="") {
-          getValue.value = "";
-      }
+function clearInput() {
+    var getValue = document.querySelector(".addEvent__text");
+    if (getValue.value != "") {
+        getValue.value = "";
+    }
 }
 
-function computedStyle(){
+function computedStyle() {
     let a = getComputedStyle(document.querySelector(".title__item"));
 
     console.log(a.fontSize)
@@ -216,10 +216,10 @@ let products = [
 ]
 
 
-function filterArr (arr){
+function filterArr(arr) {
     let newArr = [];
-    arr.filter(function(item){
-        if (item.status === "active"){
+    arr.filter(function (item) {
+        if (item.status === "active") {
             newArr.push(item);
         }
     });
@@ -228,10 +228,10 @@ function filterArr (arr){
 let a = filterArr(products);
 // console.log(a);
 
-function filterArr2 (arr){
+function filterArr2(arr) {
     let newArr = [];
-    arr.filter(function(item){
-        if (item.price > 650){
+    arr.filter(function (item) {
+        if (item.price > 650) {
             newArr.push(item);
         }
     });
@@ -249,9 +249,9 @@ let newProducts2 = products.filter(item => item.price > 650);
 // console.log(newProducts2);
 sum = 0;
 products.map((item) => {
-    if(item.price > 650){
+    if (item.price > 650) {
         sum += item.price;
-    } 
+    }
 });
 // console.log(sum);
 
@@ -270,23 +270,23 @@ products.map((item) => {
 
 // console.log(products);
 
-function getCapacity(w = 1, h = 1, l = 1){
+function getCapacity(w = 1, h = 1, l = 1) {
     return w * h * l;
 }
 // console.log(getCapacity(12));
 
 
-function getMinMax(funcType = "min", ...args){
-    if (funcType === "min"){
+function getMinMax(funcType = "min", ...args) {
+    if (funcType === "min") {
         return Math.min(...args);
     }
-    if (funcType === "max"){
+    if (funcType === "max") {
         return Math.max(...args);
     }
 
 }
 
-numbers = [4,5];
+numbers = [4, 5];
 tuc = [55, -77712, 45];
 
 // console.log(getMinMax("min", 44444444, 3, 4));
@@ -300,27 +300,27 @@ let autos = [];
 
 let auto = [
     {
-	wheels: 4,
-	type: "sedan",
-	na_hody: true,
-    ne_bita: true,
-    ne_krashena: true
+        wheels: 4,
+        type: "sedan",
+        na_hody: true,
+        ne_bita: true,
+        ne_krashena: true
     }
 ]
 
 let index = 0;
 let autoTemplate = [
     {
-    wheels: 4,
-    type: "sedan",
-    na_hody: true,
-    ne_bita: true,
-    ne_krashena: true
+        wheels: 4,
+        type: "sedan",
+        na_hody: true,
+        ne_bita: true,
+        ne_krashena: true
     }
 ]
 
 
-function createAuto (name = "carName", ...args){
+function createAuto(name = "carName", ...args) {
     let wheels = args[0];
     let type = args[1];
     let na_hody = args[2];
@@ -339,7 +339,7 @@ function createAuto (name = "carName", ...args){
             ...args
         }
     )
-    
+
 }
 
 let firstAuto = createAuto("Mazda", wheels = 4, type = "sedan", na_hody = false, ne_bita = false, ne_krashena = true);
@@ -348,7 +348,104 @@ let secondAuto = createAuto("Mercedes", wheels = 2, type = "sedan", na_hody = fa
 
 let thirdAuto = createAuto("Audi", wheels = 4, type = "sedan", na_hody = false, ne_bita = false, ne_krashena = false);
 
-console.log(autos);
-console.log(autos[0].name);
-console.log(autos[1].wheels);
-console.log(autos[2].ne_krashena);
+// console.log(autos);
+// console.log(autos[0].name);
+// console.log(autos[1].wheels);
+// console.log(autos[2].ne_krashena);
+
+const HOUSE = new Object({
+    pidval: true,
+    poverhy: 1,
+    enters: 1,
+    windows: 10,
+    showInfo() {
+        console.log(this.pidval);
+        console.log(this.poverhy);
+        console.log(this.enters);
+        console.log(this.windows);
+        // console.log(this.address);
+    }
+})
+
+const HOUSE_01 = Object.create(HOUSE);
+HOUSE_01.address = "Kyiv, Kreshatyk str, 10";
+HOUSE_01.getHouseAddress = function () {
+    console.log(this.address);
+}
+HOUSE_01.windows = 381;
+
+const HOUSE_02 = Object.create(HOUSE);
+HOUSE_02.address = "Poltava, Shevshenko str, 181";
+
+// HOUSE_01.showInfo();
+// HOUSE_01.getHouseAddress();
+// console.log(HOUSE_01);
+
+// HOUSE_01.getHouseAddress.bind(HOUSE_02)();
+// HOUSE_01.getHouseAddress.call(HOUSE_02);
+// console.log("----------------");
+// let arr = [1, 2, 3 ,4];
+// HOUSE_01.getHouseAddress.apply(HOUSE_02, arr);
+
+// console.log(HOUSE_01.getHouseAddress);
+
+let actor = -8;
+let pr = new Promise(function (resolve, reject) {
+    actor += 2;
+    // console.log(actor);
+
+    if (actor > 0) {
+        resolve(actor);
+    } else {
+        reject(`No data`);
+    }
+    // setTimeout(() => {
+    //     actor += 2;
+    //     console.log("Я щось зробив через 1 секунду");
+    //     console.log(actor);
+    //     resolve(actor);
+    // }, 3000);
+});
+
+pr.then(actor => {
+    actor += 20;
+    // console.log(actor);
+}).then(() =>{
+    let dir = 15;
+    // console.log(dir);
+}).catch(error => {
+    // console.log(error);
+}).finally(() => {
+    // console.log("Thats all");
+    // console.log("----------------");
+})
+
+
+function createEmail(mail){
+    return function(userLink){
+        return `${userLink}@${mail}`;
+    }
+}
+
+let gmailMail = createEmail("gmail.com");
+let ukrNet =  createEmail("ukr.net");
+
+
+let myMail = gmailMail("skurtachvitalii");
+let myUkrainianMail = ukrNet("skyrtach");
+
+
+// console.log(myMail);
+// console.log(myUkrainianMail);
+
+
+
+
+
+
+
+
+
+
+
+
